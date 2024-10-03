@@ -23,7 +23,7 @@ div:first-of-type img{
     display: block;
 }
 
-#cocktail {
+/* #cocktail {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@ div:first-of-type img{
 #cocktail img {
     width: 700px;
     height: auto;
-}
+} */
 
 
 button {
@@ -51,4 +51,39 @@ button {
 }
 button:hover {
     background-color: #0056b3;
+}
+
+.cocktail {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+.cocktail-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cocktail-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cocktail-instructions {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.cocktail-ingredients {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.ingredient-item {
+    font-size: 14px;
 }
