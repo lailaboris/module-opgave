@@ -1,6 +1,6 @@
-// export default function setupMorten() {
-//   console.log("Hello from Morten");
-// }
+export default function setupMorten() {
+  console.log("Hello from Morten");
+}
 
 import CocktailController from './controller.js';
 
