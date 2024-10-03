@@ -12,12 +12,22 @@ export default class CocktailView {
     displayCocktail(cocktail) {
         const { strDrink, strDrinkThumb, strInstructions } = cocktail;
         const ingredients = this.getIngredients(cocktail);
+    
         this.cocktailContainer.innerHTML = `
-            <h2>${strDrink}</h2>
-            <img src="${strDrinkThumb}" alt="${strDrink}" />
-            <p>${strInstructions}</p>
-            <ul>${ingredients.map(ing => `<li>${ing}</li>`).join('')}</ul>
+            <div class="cocktail">
+                <h2 class="cocktail-name">${strDrink}</h2>
+                <div class="cocktail-image">
+                    <img src="${strDrinkThumb}" alt="${strDrink}" />
+                </div>
+                <div class="cocktail-instructions">
+                    <p>${strInstructions}</p>
+                </div>
+                <ul class="cocktail-ingredients">
+                    ${ingredients.map(ing => `<li class="ingredient-item">${ing}</li>`).join('')}
+                </ul>
+            </div>
         `;
+    
         console.log('Displayed cocktail:', strDrink);
     }
 
