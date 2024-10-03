@@ -14,12 +14,12 @@ li{
     color: white;
 }
 
-header{
+div:first-of-type{
     display: flex;
     justify-content: center;
 }
 
-header img{
+div:first-of-type img{
     display: block;
 }
 
